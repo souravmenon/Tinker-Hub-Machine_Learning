@@ -25,7 +25,7 @@ class LinearRegression(object):
       def covariance(x, mean_x, y, mean_y):
 	        covar = 0.0
 	        for i in range(len(x)):
-		          covar += (x[i] - mean_x) * (y[i] - mean_y)
+			covar += (x[i] - mean_x) * (y[i] - mean_y)
 	        return covar
  
       # Calculate the variance of a list of numbers
@@ -42,10 +42,10 @@ class LinearRegression(object):
   b0,b1=fit(_input,_output)
     
   def predict(_input):
-    for row in test:
-		    yhat = b0 + b1 * _input
-		    predictions.append(yhat)
-	   return predictions
+   	for row in test:
+		yhat = b0 + b1 * _input
+		predictions.append(yhat)
+   	return predictions
     
     
     
