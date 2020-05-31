@@ -11,7 +11,9 @@ class LinearRegression(object):
   """
   An implementation of linear regression model
   """
+  from sklearn.linear_model import LinearRegression
   
+  clf=LinearRegression()
   def fit(_input, _output):
     pass
     
